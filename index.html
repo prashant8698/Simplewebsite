@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style1.css">
+        <script src="script.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <title></title>
+    </head>
+
+    <body onload="myFunction()">
+        <div class="loader" id="loading"></div>
+       <div class="bgimage">
+            <div class="menu">
+                
+                <div class="leftmenu">
+                    <h4 id="idea"> IdeaCreated </h4>
+                </div>
+    
+                <div class="rightmenu">
+                    <ul>
+                        <li id="fisrtlist">HOME </li>
+                        <li> Services </li>
+                        <li> Works</li>
+                        <li> Aboust us</li>
+                       
+                        <a href="contact.html"><li>contact</li></a>
+                    </ul>
+                </div>
+    
+            </div>
+    
+            <div class="text">
+                <h4> THINK • PLAN • DEVELOPMENT </h4>
+                <h1> CREATIVE & innovative </h1>
+                <h3> WE ARE THE ONE OF THE WORLD’S TOP CREATIVE New Idea </h3>
+                <button id="buttonone"> like share </button>
+                <button id="buttontwo"> Subscribe </button> 
+            </div>
+    
+        </div><br><br>
+        <footer style="width: 100%;height: 100px; background-color: #010101;">
+            <h4 style="color: white; font-family: 'Dosis', sans-serif; line-height: 100px; text-align: center"> @Copyright CreatedIdea 2019 </h4>
+        </footer>
+        <script>
+    
+    
+            // $(document).ready(function(){
+                // 	$('div#loading').removeAttr('id');
+            // });
+            var preloader = document.getElementById("loading");
+            $(window).load(function() {
+                setTimeout(function(){ $('.loader').fadeIn(); }, 1000);
+   setTimeout(function(){ $('.loader').fadeOut('slow'); }, 4000);
+})
+            // window.addEventListener('load', function(){
+            // 	preloader.style.display = 'none';
+            // 	})
+    
+            function myFunction(){
+                preloader.style.display = 'none';
+            };
+    
+        </script>
+    </body>
+   
+</html>
